@@ -1,0 +1,9 @@
+package nda.search.general.api.dto.exception
+
+enum class ExceptionTypeDto {
+    INDEXATION_NOT_FOUND_EXCEPTION,
+    CANNOT_CREATE_INDEXATION_EXCEPTION,
+    NOT_AVAILABLE_OPERATION_EXCEPTION,
+    PRODUCT_NOT_FOUND_EXCEPTION,
+    UNKNOWN_EXCEPTION,
+}

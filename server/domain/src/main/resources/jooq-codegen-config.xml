@@ -1,0 +1,21 @@
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.18.0.xsd">
+    <generator>
+        <database>
+            <inputSchema>public</inputSchema>
+            <includes>.*</includes>
+            <excludes>
+                QRTZ_.*
+                | SYSTEM_SEQUENCE_.*
+                | TEST_.*
+                | FLYWAY_.*
+            </excludes>
+        </database>
+        <target>
+            <packageName>ru.nda.search.general.domain.db</packageName>
+            <directory>src/main/java</directory>
+        </target>
+        <generate>
+            <deprecated>false</deprecated>
+        </generate>
+    </generator>
+</configuration>
